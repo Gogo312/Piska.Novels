@@ -35,10 +35,6 @@ main {
 
 section {
     margin: 20px 0;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 footer {
@@ -46,78 +42,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-}
-
-/* تنسيقات إضافية لنماذج التسجيل وتسجيل الدخول */
-#register, #login {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-/* تنسيقات محتوى الروايات والمانغا */
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.content div {
-    background-color: #e9ecef;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    flex: 1;
-    min-width: 200px;
-    max-width: 300px;
-    margin: 10px;
-}
-
-/* تنسيقات التعليقات والتقييم */
-#commentSection, #ratingSection, #readingListSection, #searchSection {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-#commentSection textarea, #ratingSection .star, #readingListSection input, #searchSection input {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.star {
-    font-size: 2em;
-    cursor: pointer;
 }
