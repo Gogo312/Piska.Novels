@@ -1,102 +1,104 @@
-/* تنسيقات الجسم والعناصر الأساسية */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مختبر بيسكا🔬</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .star {
+            font-size: 2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌙 مختبر بيسكا🔬</h1>
+        <nav>
+            <ul>
+                <li><a href="#featured-novels">الرئيسية</a></li>
+                <li><a href="#categories">التصنيفات</a></li>
+                <li><a href="#featured-stories">القصص المميزة</a></li>
+                <li><a href="#login">تسجيل الدخول</a></li>
+                <li><a href="#register">التسجيل</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="featured-novels">
+            <h2>روايات مميزة</h2>
+            <!-- إضافة محتوى الروايات المميزة هنا -->
+        </section>
+        <section id="categories">
+            <h2>التصنيفات</h2>
+            <!-- إضافة محتوى التصنيفات هنا -->
+        </section>
+        <section id="featured-stories">
+            <h2>القصص المميزة</h2>
+            <!-- إضافة محتوى القصص المميزة هنا -->
+        </section>
+        <section id="new-manga">
+            <h2>مانجا جديدة</h2>
+            <!-- إضافة محتوى المانجا الجديدة هنا -->
+        </section>
+        <section id="most-read">
+            <h2>أكثر الأعمال قراءةً</h2>
+            <!-- إضافة محتوى الأعمال الأكثر قراءةً هنا -->
+        </section>
+        <section id="register">
+            <h2>التسجيل</h2>
+            <form id="registerForm">
+                <input type="text" id="username" placeholder="اسم المستخدم" required>
+                <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+                <input type="password" id="password" placeholder="كلمة المرور" required>
+                <button type="submit">تسجيل</button>
+            </form>
+        </section>
+        <section id="login">
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="البريد الإلكتروني" required>
+                <input type="password" id="loginPassword" placeholder="كلمة المرور" required>
+                <button type="submit">دخول</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 مختبر بيسكا🔬</p>
+    </footer>
 
-header {
-    background-color: #343a40;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
+    <div id="searchSection">
+        <input type="text" id="searchBox" placeholder="ابحث عن روايات أو مانجا...">
+        <button onclick="search()">بحث</button>
+    </div>
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+    <div id="commentSection">
+        <h3>التعليقات</h3>
+        <div id="comments"></div>
+        <textarea id="newComment" placeholder="أضف تعليقًا..."></textarea>
+        <button onclick="addComment()">إرسال</button>
+    </div>
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
+    <div id="ratingSection">
+        <h3>التقييم</h3>
+        <span class="star" onclick="rate(1)">&#9733;</span>
+        <span class="star" onclick="rate(2)">&#9733;</span>
+        <span class="star" onclick="rate(3)">&#9733;</span>
+        <span class="star" onclick="rate(4)">&#9733;</span>
+        <span class="star" onclick="rate(5)">&#9733;</span>
+        <p id="ratingValue">تقييم: 0</p>
+    </div>
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+    <div id="readingListSection">
+        <h3>قائمة القراءة</h3>
+        <input type="text" id="readingItem" placeholder="أضف إلى قائمة القراءة...">
+        <button onclick="addToReadingList()">إضافة</button>
+        <ul id="readingList"></ul>
+    </div>
 
-main {
-    padding: 20px;
-    text-align: center;
-}
+    <button onclick="notifyUser()">أرسل إشعار</button>
 
-section {
-    margin: 20px 0;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-footer {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* تنسيقات لنماذج التسجيل وتسجيل الدخول */
-#register, #login {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-/* تنسيقات محتوى الروايات والمانغا */
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.content div {
-    background-color: #e9ecef;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    flex: 1;
-    min-width: 200px;
-    max-width: 300px;
-    margin: 10px;
-    }
+    <script src="script.js"></script>
+</body>
+</html>
