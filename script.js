@@ -25,9 +25,11 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
 
-        targetElement.scrollIntoView({
-            behavior: 'smooth'
-        });
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth' // التنقل السلس
+            });
+        }
     });
 });
 
@@ -109,4 +111,4 @@ function notifyUser() {
             }
         });
     }
-                            }
+    }
