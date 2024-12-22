@@ -14,23 +14,46 @@
                 <li><a href="#">الرئيسية</a></li>
                 <li><a href="#">التصنيفات</a></li>
                 <li><a href="#">القصص المميزة</a></li>
-                <li><a href="#">تسجيل الدخول</a></li>
-                <li><a href="#">التسجيل</a></li>
+                <li><a href="#login">تسجيل الدخول</a></li>
+                <li><a href="#register">التسجيل</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="featured-novels">
             <h2>روايات مميزة</h2>
-            <!-- إضافة محتوى الروايات المميزة هنا -->
+            <div class="content">
+                <!-- إضافة محتوى الروايات المميزة هنا -->
+            </div>
         </section>
-        <section>
+        <section id="new-manga">
             <h2>مانجا جديدة</h2>
-            <!-- إضافة محتوى المانجا الجديدة هنا -->
+            <div class="content">
+                <!-- إضافة محتوى المانجا الجديدة هنا -->
+            </div>
         </section>
-        <section>
+        <section id="most-read">
             <h2>أكثر الأعمال قراءةً</h2>
-            <!-- إضافة محتوى الأعمال الأكثر قراءةً هنا -->
+            <div class="content">
+                <!-- إضافة محتوى الأعمال الأكثر قراءةً هنا -->
+            </div>
+        </section>
+        <section id="register">
+            <h2>التسجيل</h2>
+            <form id="registerForm">
+                <input type="text" id="username" placeholder="اسم المستخدم" required>
+                <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+                <input type="password" id="password" placeholder="كلمة المرور" required>
+                <button type="submit">تسجيل</button>
+            </form>
+        </section>
+        <section id="login">
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="البريد الإلكتروني" required>
+                <input type="password" id="loginPassword" placeholder="كلمة المرور" required>
+                <button type="submit">دخول</button>
+            </form>
         </section>
     </main>
     <footer>
@@ -38,4 +61,67 @@
     </footer>
     <script src="script.js"></script>
 </body>
-</html>
+                </html><!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مختبر بيسكا🔬</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌙 مختبر بيسكا🔬</h1>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">التصنيفات</a></li>
+                <li><a href="#">القصص المميزة</a></li>
+                <li><a href="#login">تسجيل الدخول</a></li>
+                <li><a href="#register">التسجيل</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="featured-novels">
+            <h2>روايات مميزة</h2>
+            <div class="content">
+                <!-- إضافة محتوى الروايات المميزة هنا -->
+            </div>
+        </section>
+        <section id="new-manga">
+            <h2>مانجا جديدة</h2>
+            <div class="content">
+                <!-- إضافة محتوى المانجا الجديدة هنا -->
+            </div>
+        </section>
+        <section id="most-read">
+            <h2>أكثر الأعمال قراءةً</h2>
+            <div class="content">
+                <!-- إضافة محتوى الأعمال الأكثر قراءةً هنا -->
+            </div>
+        </section>
+        <section id="register">
+            <h2>التسجيل</h2>
+            <form id="registerForm">
+                <input type="text" id="username" placeholder="اسم المستخدم" required>
+                <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+                <input type="password" id="password" placeholder="كلمة المرور" required>
+                <button type="submit">تسجيل</button>
+            </form>
+        </section>
+        <section id="login">
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="البريد الإلكتروني" required>
+                <input type="password" id="loginPassword" placeholder="كلمة المرور" required>
+                <button type="submit">دخول</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 مختبر بيسكا🔬</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+    </html>
